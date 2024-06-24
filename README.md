@@ -1,5 +1,3 @@
-# web-vuln-examples
-
 # Web Vulnerability Examples
 
 Welcome to the Web Vulnerability Examples repository! This project provides example code for various web vulnerabilities, including stored, reflected, and DOM-based XSS attacks, along with their mitigation strategies.
