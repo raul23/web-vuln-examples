@@ -11,7 +11,6 @@ Welcome to the Web Vulnerability Examples repository! This project provides exam
   - [Stored XSS](#stored-xss)
   - [Reflected XSS](#reflected-xss)
   - [DOM-Based XSS](#dom-based-xss)
-  - [Other Vulnerabilities](#other-vulnerabilities)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -32,10 +31,6 @@ This repository aims to educate developers about common web vulnerabilities and 
 ### DOM-Based XSS
 - [Example 1](DOM_Based_XSS/example1)
 - [Example 2](DOM_Based_XSS/example2)
-
-### Other Vulnerabilities
-- [Example 1](Other_Vulnerabilities/example1)
-- [Example 2](Other_Vulnerabilities/example2)
 
 ## Contributing
 
