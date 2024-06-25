@@ -1,1 +1,19 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Language Selection</title>
+</head>
+<body>
+    <h1>Select your language:</h1>
+    <select>
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            const defaultLang = urlParams.get('default');
+            if (defaultLang) {
+                document.write("<option value='1'>" + decodeURIComponent(defaultLang) + "</option>");
+            }
+            document.write("<option value='2'>English</option>");
+        </script>
+    </select>
+</body>
+</html>
