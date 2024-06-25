@@ -1,4 +1,4 @@
-# DOM-Based XSS Mitigation Example 1-3 using DOMPurify
+# DOM-Based XSS Mitigation 3 using DOMPurify
 
 ## Overview
 
