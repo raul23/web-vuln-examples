@@ -61,7 +61,7 @@ This HTML file contains the vulnerable code:
    To demonstrate the DOM-based XSS attack, navigate to:
 
    ```
-   http://localhost:8000/?default=%3Cscript%3Ealert('DOM-based%20XSS%20attack!')%3C/script%3E
+   http://localhost:8000/?default=%3Cscript%3Ealert("DOM-based%20XSS%20attack!")%3C/script%3E
    ```
 
    This should trigger a JavaScript alert displaying "DOM-based XSS attack!".
@@ -91,7 +91,7 @@ This HTML file contains the vulnerable code:
    To demonstrate the DOM-based XSS attack, navigate to:
 
    ```
-   http://localhost:8000/index.html?default=<script>alert('DOM-based XSS attack!')</script>
+   http://localhost:8000/index.html?default=<script>alert("DOM-based XSS attack!")</script>
    ```
 
    This should trigger a JavaScript alert displaying "DOM-based XSS attack!".
