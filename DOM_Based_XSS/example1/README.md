@@ -100,6 +100,12 @@ This HTML file contains the vulnerable code:
 
 This example is a DOM-based XSS attack because the payload is processed and executed entirely on the client side. The JavaScript code on the page dynamically writes content into the DOM using `document.write` based on the URL parameter. Since the `default` parameter is not properly sanitized, it can contain malicious code that gets executed when the page is rendered. The attack vector lies within the DOM manipulation performed by the client's browser, highlighting the importance of secure client-side scripting practices.
 
+## Mitigation strategies
+
+- [Mitigation 1](mitigation/example1-1): Uses `textContent` instead of `document.write` to update the DOM safely.
+- [Mitigation 2](mitigation/example1-2): Uses the `setAttribute` method to safely set the value attribute of an element, mitigating the DOM-based XSS attack.
+- [Mitigation 3](mitigation/example1-3): Uses DOMPurify to sanitize input, ensuring that any potentially harmful scripts are removed before being inserted into the DOM.
+
 ## Important Considerations
 
 - **Security Risk**: This example intentionally exposes a vulnerability for educational purposes. In a real-world scenario, always sanitize and validate user input to prevent XSS attacks.
