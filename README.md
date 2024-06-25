@@ -31,7 +31,7 @@ This repository aims to educate developers about common web vulnerabilities and 
   A simple HTML page allows the user to select their preferred language via a dropdown menu. The default language can be set using a query parameter in the URL. This parameter is processed and written into the DOM, making it vulnerable to a DOM-based XSS attack. It uses `document.write`.
   
   - **Mitigation Examples**:
-    - [Mitigation 1](DOM_Based_XSS/examples1/mitigation/example1-1): Uses `textContent` instead of `document.write` to update the DOM safely.
+    - [Mitigation 1](DOM_Based_XSS/example1/mitigation/example1-1): Uses `textContent` instead of `document.write` to update the DOM safely.
     - [Mitigation 2](DOM_Based_XSS/example2/mitigation/example1-2): Uses the `setAttribute` method to safely set the value attribute of an element, mitigating the DOM-based XSS attack.
     - [Mitigation 3](DOM_Based_XSS/example3/mitigation/example1-3): Uses DOMPurify to sanitize input, ensuring that any potentially harmful scripts are removed before being inserted into the DOM.
 
