@@ -86,4 +86,4 @@ By understanding and testing this vulnerability, developers can implement proper
 
 ## Source
 
-This example is based on the scenario provided in the article: [XSS101 - Understanding Cross Site Scripting](https://brutelogic.com.br/blog/xss101/)
+This example is based on the example provided in the article [XSS101](https://brutelogic.com.br/blog/xss101/) by Brutelogic.
