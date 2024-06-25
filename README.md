@@ -24,7 +24,8 @@ This repository aims to educate developers about common web vulnerabilities and 
 
 ### Reflected XSS
 - [Example 1](Reflected_XSS/example1)
-
+- [Example 2](Reflected_XSS/example2)
+  
 ### DOM-Based XSS
 - **[Example 1](DOM_Based_XSS/example1)**: 
   A simple HTML page allows the user to select their preferred language via a dropdown menu. The default language can be set using a query parameter in the URL. This parameter is processed and written into the DOM, making it vulnerable to a DOM-based XSS attack. It uses `document.write`.
