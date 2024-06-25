@@ -8,9 +8,9 @@ This example demonstrates a reflected XSS (Cross-Site Scripting) attack where us
 
 ### Attack Example
 
-In the vulnerable example, a simple HTML page (`hello.html`) allows users to input their username via a URL parameter (`user`). The username is directly echoed back to the user without any validation or sanitization, making it vulnerable to a reflected XSS attack.
+In the vulnerable example, a simple HTML page (`hello.php`) allows users to input their username via a URL parameter (`user`). The username is directly echoed back to the user without any validation or sanitization, making it vulnerable to a reflected XSS attack.
 
-Here is the vulnerable code (`hello.html`):
+Here is the vulnerable code (`hello.php`):
 
 ```html
 <!DOCTYPE html>
@@ -45,7 +45,7 @@ This URL injects a `<script>` tag into the `user` parameter, which executes the 
 
 1. **Start a PHP Server**
 
-   Use PHP to start a simple web server. Open a terminal and navigate to the directory containing `hello.html`, then run:
+   Use PHP to start a simple web server. Open a terminal and navigate to the directory containing `hello.php`, then run:
 
    ```sh
    php -S localhost:8000
