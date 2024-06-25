@@ -1,1 +1,24 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Language Selection</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.2.8/purify.min.js"></script>
+</head>
+<body>
+    <h1>Select your language:</h1>
+    <select id="languageSelect">
+        <option value="2">English</option>
+    </select>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const defaultLang = urlParams.get('default');
+        if (defaultLang) {
+            const sanitizedLang = DOMPurify.sanitize(decodeURIComponent(defaultLang));
+            const option = document.createElement("option");
+            option.value = "1";
+            option.textContent = sanitizedLang;
+            document.getElementById("languageSelect").appendChild(option);
+        }
+    </script>
+</body>
+</html>
