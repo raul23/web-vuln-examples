@@ -1,4 +1,4 @@
-# DOM-Based XSS Mitigation Example 1-2
+# DOM-Based XSS Mitigation 2
 
 ## Overview
 
