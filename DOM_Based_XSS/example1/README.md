@@ -1,7 +1,5 @@
 # DOM-Based XSS - Example 1
 
-# DOM-based XSS Example
-
 This repository is part of the `web-vuln-examples` project, showcasing various web vulnerabilities and their mitigation strategies. This example demonstrates a DOM-based XSS attack, based on an example provided by the [OWASP article on DOM-based XSS](https://owasp.org/www-community/attacks/DOM_Based_XSS).
 
 ## Description
