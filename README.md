@@ -24,7 +24,6 @@ This repository aims to educate developers about common web vulnerabilities and 
 
 ### Reflected XSS
 - [Example 1](Reflected_XSS/example1)
-- [Example 2](Reflected_XSS/example2)
 
 ### DOM-Based XSS
 - **[Example 1](DOM_Based_XSS/example1)**: 
