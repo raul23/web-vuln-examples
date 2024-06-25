@@ -1,4 +1,4 @@
-# Reflected XSS - Example 2
+# Reflected XSS - Example 1
 
 ## Overview
 
