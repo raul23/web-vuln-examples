@@ -1,5 +1,7 @@
 # DOM-Based XSS - Example 1
 
+# DOM-based XSS Example
+
 This repository is part of the `web-vuln-examples` project, showcasing various web vulnerabilities and their mitigation strategies. This example demonstrates a DOM-based XSS attack, based on an example provided by the [OWASP article on DOM-based XSS](https://owasp.org/www-community/attacks/DOM_Based_XSS).
 
 ## Description
@@ -95,6 +97,10 @@ This HTML file contains the vulnerable code:
    ```
 
    This should trigger a JavaScript alert displaying "DOM-based XSS attack!".
+
+## Why This is a DOM-based XSS Attack
+
+This example is a DOM-based XSS attack because the payload is processed and executed entirely on the client side. The JavaScript code on the page dynamically writes content into the DOM using `document.write` based on the URL parameter. Since the `default` parameter is not properly sanitized, it can contain malicious code that gets executed when the page is rendered. The attack vector lies within the DOM manipulation performed by the client's browser, highlighting the importance of secure client-side scripting practices.
 
 ## Important Considerations
 
