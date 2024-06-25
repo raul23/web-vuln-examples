@@ -37,7 +37,7 @@ Here is the original code:
 To test the DOM-based XSS attack, an attacker could use a URL like:
 
 ```
-http://localhost:8000/?default=<script>alert('DOM-based XSS attack!')</script>
+http://localhost:8000/?default=<script>alert("DOM-based XSS attack!")</script>
 ```
 
 This would inject the script into the page, displaying an alert box.
@@ -102,10 +102,10 @@ Here is the mitigated version of the code:
    Now, test the mitigation by navigating to:
 
    ```
-   http://localhost:8000/index.html?default=<script>alert('DOM-based XSS attack!')</script>
+   http://localhost:8000/index.html?default=<script>alert("DOM-based XSS attack!")</script>
    ```
 
-   You should not see an alert box. Instead, the dropdown will display the literal text `<script>alert('DOM-based XSS attack!')</script>` as a selectable option, demonstrating that the script was not executed.
+   You should not see an alert box. Instead, the dropdown will display the literal text `<script>alert("DOM-based XSS attack!")</script>` as a selectable option, demonstrating that the script was not executed.
 
 ## Why This is a DOM-Based XSS Attack
 
