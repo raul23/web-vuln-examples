@@ -32,8 +32,8 @@ This repository aims to educate developers about common web vulnerabilities and 
   
   - **Mitigation Examples**:
     - [Mitigation 1](DOM_Based_XSS/mitigation/example1-1): Uses `textContent` instead of `document.write` to update the DOM safely.
-    - [Mitigation 2](DOM_Based_XSS/mitigation/example1-2): Uses DOMPurify to sanitize input, ensuring that any potentially harmful scripts are removed before being inserted into the DOM.
     - [Mitigation 3](DOM_Based_XSS/mitigation/example1-3): Uses the `setAttribute` method to safely set the value attribute of an element, mitigating the DOM-based XSS attack.
+    - [Mitigation 2](DOM_Based_XSS/mitigation/example1-2): Uses DOMPurify to sanitize input, ensuring that any potentially harmful scripts are removed before being inserted into the DOM.
 
 ## Contributing
 
