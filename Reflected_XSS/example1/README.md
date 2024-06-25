@@ -34,7 +34,7 @@ Here is the vulnerable code (`hello.php`):
 To test the reflected XSS attack, an attacker could use a URL like:
 
 ```
-http://localhost:8000/hello.php?user=<script>alert('Reflected XSS attack!')</script>
+http://localhost:8000/hello.php?user=<script>alert("Reflected XSS attack!")</script>
 ```
 
 This URL injects a `<script>` tag into the `user` parameter, which executes the JavaScript `alert()` function, displaying an alert box in the victim's browser.
@@ -73,7 +73,7 @@ This URL injects a `<script>` tag into the `user` parameter, which executes the 
    Navigate to:
 
    ```
-   http://localhost:8000/hello.php?user=%3Cscript%3Ealert(%22Reflected%20XSS%20attack!%22)%3C/script%3E
+   http://localhost:8000/hello.php?user=<script>alert("Reflected XSS attack!")</script>
    ```
 
    You should see an alert box displaying `Reflected XSS attack!`.
