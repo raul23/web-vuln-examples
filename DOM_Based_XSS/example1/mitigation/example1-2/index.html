@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Language Selection</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.2.8/purify.min.js"></script>
 </head>
 <body>
     <h1>Select your language:</h1>
@@ -12,9 +13,10 @@
         const urlParams = new URLSearchParams(window.location.search);
         const defaultLang = urlParams.get('default');
         if (defaultLang) {
+            const sanitizedLang = DOMPurify.sanitize(decodeURIComponent(defaultLang));
             const option = document.createElement("option");
-            option.setAttribute("value", "1");
-            option.textContent = decodeURIComponent(defaultLang);
+            option.value = "1";
+            option.textContent = sanitizedLang;
             document.getElementById("languageSelect").appendChild(option);
         }
     </script>
