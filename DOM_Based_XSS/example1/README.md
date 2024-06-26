@@ -103,8 +103,7 @@ This example is a DOM-based XSS attack because the payload is processed and exec
 ## Mitigation Examples
 
 - [Mitigation 1](mitigation/example1-1): Uses `textContent` instead of `document.write` to update the DOM safely.
-- [Mitigation 2](mitigation/example1-2): Uses the `setAttribute` method to safely set the value attribute of an element, mitigating the DOM-based XSS attack.
-- [Mitigation 3](mitigation/example1-3): Uses DOMPurify to sanitize input, ensuring that any potentially harmful scripts are removed before being inserted into the DOM.
+- [Mitigation 2](mitigation/example1-2): Uses DOMPurify to sanitize input, ensuring that any potentially harmful scripts are removed before being inserted into the DOM.
 
 ## Important Considerations
 
