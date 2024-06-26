@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Page</title>
+    <!-- Include DOMPurify library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.2.8/purify.min.js"></script>
+</head>
+<body>
+    <form id="searchForm" action="search.php" method="GET">
+        <input type="text" id="query" name="query">
+        <input type="submit" value="Search">
+    </form>
+
+    <script>
+        document.getElementById('searchForm').addEventListener('submit', function(event) {
+            // Prevent form submission to sanitize input first
+            event.preventDefault();
+            
+            // Get the query input
+            let queryInput = document.getElementById('query');
+            let sanitizedQuery = DOMPurify.sanitize(queryInput.value);
+
+            // Set the sanitized query back to the input field
+            queryInput.value = sanitizedQuery;
+
+            // Submit the form
+            event.target.submit();
+        });
+    </script>
+</body>
+</html>
+
