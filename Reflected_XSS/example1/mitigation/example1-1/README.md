@@ -64,7 +64,7 @@ To mitigate the risk of Reflected XSS attacks, it is crucial to encode any user-
 
 To verify the effectiveness of the mitigation:
 
-1. **Start a PHP Server**:
+1. **Start a PHP Server**
 
    ```sh
    php -S localhost:8000
@@ -72,7 +72,7 @@ To verify the effectiveness of the mitigation:
 
    This will start a local PHP server on port 8000.
    
-2. **XSS Attack Simulation**:
+2. **XSS Attack Simulation**
 
    Navigate to:
 
