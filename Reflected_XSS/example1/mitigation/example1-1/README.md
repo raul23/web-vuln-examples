@@ -73,6 +73,7 @@ To verify the effectiveness of the mitigation:
    This will start a local PHP server on port 8000.
    
 2. **XSS Attack Simulation**:
+
    Navigate to:
 
    ```
