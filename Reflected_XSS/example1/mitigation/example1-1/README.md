@@ -64,11 +64,22 @@ To mitigate the risk of Reflected XSS attacks, it is crucial to encode any user-
 
 To verify the effectiveness of the mitigation:
 
-1. **Start a PHP Server**: Use PHP to start a local server and navigate to `hello.php` with different input values for `user`.
+1. **Start a PHP Server**:
+
+   ```sh
+   php -S localhost:8000
+   ```
+
+   This will start a local PHP server on port 8000.
    
-2. **Normal Input**: Input a username like `John Doe`.
-   
-3. **XSS Attack Simulation**: Input a username like `<script>alert("Reflected XSS attack!")</script>`. You should see the username displayed as plain text without triggering the JavaScript alert, confirming that the mitigation is effective.
+2. **XSS Attack Simulation**:
+   Navigate to:
+
+   ```
+   http://localhost:8000/hello.php?user=<script>alert("Reflected XSS attack!")</script>
+   ```
+  
+   You should see the username displayed as plain text without triggering the JavaScript alert, confirming that the mitigation is effective.
 
 ### Conclusion
 
