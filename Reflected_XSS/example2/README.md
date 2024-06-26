@@ -76,6 +76,12 @@ This input injects a `<script>` tag into the `query` parameter, which executes t
 
 3. **Test the Reflected XSS Attack**
 
+   Navigate back to:
+
+   ```
+   http://localhost:8000
+   ```
+
    Enter the following in the search box:
 
    ```
